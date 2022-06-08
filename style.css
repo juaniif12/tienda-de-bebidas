@@ -1,0 +1,80 @@
+ header{background-color:black ;
+padding: 5px;
+margin:auto;}
+img{ height: 100px;
+}
+.imgface{height: 30px;}
+h1{ text-align: center;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(255, 166, 0);}
+a{color: rgb(216, 149, 25);}
+ 
+ul{list-style: none;
+    text-align: center;
+display: flex;
+flex-wrap: nowrap;
+font-size: 25px;
+padding: 10px;
+justify-content:space-around;}
+
+   
+
+
+button{background-color: black; 
+ color: orange;
+font-size: 30px;
+border-color: #ffa500;
+border-radius: 30%;
+padding: 23px;}
+ body{background-color: #ffa500;
+margin: 0px;}
+h2{text-transform: uppercase;
+padding: 20px;
+font-size: 40px;
+color: #ffa500;}
+
+
+
+ footer{background-color:black;
+padding: 5px;
+margin: auto;}
+ h3{display: inline-block;
+    width: 30%;
+    position: relative;
+    color: rgb(255, 166, 0);
+    text-align: center;
+font-size: 30px;}  
+
+.header{grid-area: header; }
+
+.nav{grid-area: nav; }
+
+.main{grid-area: main;
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+     flex-wrap:wrap;
+     width: 100%;
+        }
+
+.footer{ grid-area: footer;}
+
+.divcontainer{ grid-template-areas: 'header''nav''main''footer';}
+
+.hijo{background-color: black;
+border-radius: 20%;
+text-align: center;
+width: 400px;
+height:450px ;
+margin-top: 15px;}
+@media(max-width:430px){ 
+    .header{width: 430px;}
+
+    button{ padding: 10px;
+font-size: 20px;}
+
+.footer{ display: flex;
+    width: 430px;}
+.h3{font-size: 20px;}
+
+#insta{ position: relative; top: 37px;} }
