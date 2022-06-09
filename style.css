@@ -17,7 +17,7 @@ font-size: 25px;
 padding: 10px;
 justify-content:space-around;}
 
-   
+button:hover{transition: auto; }
 
 
 button{background-color: black; 
