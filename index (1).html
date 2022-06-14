@@ -6,34 +6,62 @@
 	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
 	<title>tienda de bebidas</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
+<body class="bodystyle">
 	<div class="divcontainer">
 	<header class="header"> 
 		<img src="./LogoMakr-8qLcCu.png" alt="">
 	
 		<nav class="nav">
+			
 			<ul class="ul">
-				<li ><button><a href="./alcohol.html">bebidas c/alcohol</a></button></li>
-				<li ><button><a href="./bebidas.html">bebidas sin alcohol</a></button></li>
-				<li ><button><a href="./combos.html">combos</a></button></li> 
-				<li ><button><a href="./micarrito.html">mi carrito</a></button></li>
+				<li ><button class="button"><a class="a" href="./alcohol.html">bebidas c/alcohol</a></button></li>
+				<li ><button class="button"><a class="a" href="./bebidas.html">bebidas sin alcohol</a></button></li>
+				<li ><button class="button"><a class="a" href="./combos.html">combos</a></button></li> 
+				<li ><button class="button"><a class="a" href="./micarrito.html">mi carrito</a></button></li>
 			</ul>
+			
 		</nav>
 	</header>
-<main class="main">
-
-	<article class="hijo"><h2>bebidas C/alcohol</h2><button>COMPRAR</button></article>
-	<article class="hijo"><h2>bebidas sin alcohol</h2><button>COMPRAR</button></article>
-	<article class="hijo"><h2>combos</h2><button>COMPRAR</button></article>
-
-	</main>
+	<div class="row row-cols-1 row-cols-md-3 g-4 divstyle">
+		<div class="col">
+		  <div class="card h-100">
+			<img src="..." class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">Bebidas con alcohol</h5>
+			  <button type="button" class="btn btn-primary">COMPRAR</button>
+			</div>
+		  </div>
+		</div>
+		<div class="col">
+		  <div class="card h-100">
+			<img src="..." class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">Bebidas sin alcohol</h5>
+			  <button type="button" class="btn btn-primary">COMPRAR</button>
+			</div>
+	
+		  </div>
+		</div>
+		<div class="col" >
+		  <div class="card h-100">
+			<img src="..." class="card-img-top"alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">Combos</h5>
+			  <button type="button" class="btn btn-primary">COMPRAR</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
 	<br>
+	
 	<footer class="footer">
 		<h3 class="h3">LOGO</h3>
 		<h3 class="h3">NUESTRAS REDES <img id="insta"class="imgface"src="./instagram.png" alt="instagram"> <img id="face"class="imgface" src="facebook (1).png" alt="facebook"> </h3>
 		<h3 class="h3">CONTACTO <img id="wpp" class="imgface" src="./whatsapp.png" alt=""></h3>
 	</footer>
-	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

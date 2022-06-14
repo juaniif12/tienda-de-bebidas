@@ -6,48 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIENDA DE BEBIDAS - combos</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
-   <header>
+<body class="bodystyle">
+   <header class="header">
        <h1>combos</h1>
-       <nav>
-        <ul>
-            <li><a href="./index (1).html">inicio</a></li>
-            <li><a href="./alcohol.html">bebidas con alcohol</a></li>
-            <li><a href="./bebidas.html">bebidas sin alcohol</a></li>
-            <li><a href="./micarrito.html">mi carrito</a></li>
+       <nav class="nav">
+        <ul class="ul">
+            <li><button class="button"><a class="a" href="./index (1).html">inicio</a></li>
+            <li><button class="button"><a class="a" href="./alcohol.html">bebidas con alcohol</a></li>
+            <li><button class="button"><a class="a" href="./bebidas.html">bebidas sin alcohol</a></li>
+            <li><button class="button"><a class="a" href="./micarrito.html">mi carrito</a></li>
         </ul>
 
     </nav>
    </header> 
-   <section>
-    <article>
-        <table border="1" cellpadding="1" cellspacing="1">
-            <tr>
-                <th>bebidas</th>
+   <div class="row row-cols-1 row-cols-md-3 g-4 divstyle">
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">combo 1</h5>
+          <button type="button" class="btn btn-primary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">combo 2</h5>
+          <button type="button" class="btn btn-primary">COMPRAR</button>
+        </div>
 
-                <th>precio</th> 
-                               
-            </tr>
-            <tr>
-
-                <td>Coca-cola + Sprite </td>
-                <td>$280</td>
-                <th><button>añadir al carrito</button></th> 
-            </tr>
-            <tr>
-                <td>Coca-cola + fernet</td>
-                <td>$1050</td>
-                <th><button>añadir al carrito</button></th>
-            </tr>
-            <tr>
-                <td>Chandon + Speed</td>
-                <td>$1100</td>
-                <th><button>añadir al carrito</button></th>
-            </tr>
-        </table>
-    </article>
-</section>
+      </div>
+    </div>
+    <div class="col" >
+      <div class="card h-100">
+        <img src="..." class="card-img-top"alt="...">
+        <div class="card-body">
+          <h5 class="card-title">combo 3</h5>
+          <button type="button" class="btn btn-primary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <footer class="footer">
     <h3 class="h3">LOGO</h3>
     <h3 class="h3">NUESTRAS REDES <img id="insta"class="imgface"src="./instagram.png" alt="instagram"> <img id="face"class="imgface" src="facebook (1).png" alt="facebook"> </h3>

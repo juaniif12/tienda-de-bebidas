@@ -6,28 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIENDA DE BEBIDAS - alcohol</title>
     <link rel="stylesheet" href="./style.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
+<body  class="bodystyle">
    <header class="header">
     <img src="../LogoMakr-8YIJcZ.png" alt="">
-       <h1>BEBIDAS CON ALCOHOL</h1>
+       <h1 class="h1">BEBIDAS CON ALCOHOL</h1>
        <nav class="nav">
-        <ul>
-            <li> <button><a href="./index (1).html">inicio</a></button></li>
-            <li><button><a href="./bebidas.html">bebidas sin alcohol</a></button></li>
-            <li><button><a href="./combos.html">combos</a></button></li>
-            <li><button><a href="./micarrito.html">mi carrito</a></button></li>
+        <ul class="ul">
+            <li><button class="button"><a class="a" href="./index (1).html">inicio</a></button></li>
+            <li><button class="button"><a class="a" href="./bebidas.html">bebidas sin alcohol</a></button></li>
+            <li><button class="button"><a class="a" href="./combos.html">combos</a></button></li>
+            <li><button class="button"><a class="a" href="./micarrito.html">mi carrito</a></button></li>
         </ul>
 
     </nav>
    </header> 
-   <main class="main">
+   <div class="row row-cols-1 row-cols-md-3 g-4 divstyle">
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">cervezas</h5>
+          <button type="button" class="btn btn-primary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">vinos</h5>
+          <button type="button" class="btn btn-primary">COMPRAR</button>
+        </div>
 
-	<article class="hijo"><h2>bebida 1</h2><button>añadir al carrito</button></article>
-	<article class="hijo"><h2>bebida 2</h2><button>añadir al carrito</button></article>
-	<article class="hijo"><h2>bebida 3</h2><button>añadir al carrito</button></article>
-
-	</main>
+      </div>
+    </div>
+    <div class="col" >
+      <div class="card h-100">
+        <img src="..." class="card-img-top"alt="...">
+        <div class="card-body">
+          <h5 class="card-title">whiskys</h5>
+          <button type="button" class="btn btn-primary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <footer class="footer" id="LOGO">
     <h3 class="h3">LOGO</h3>
     <h3 class="h3">NUESTRAS REDES <img id="insta" class="imgface" src="./instagram.png" alt="instagram"> <img class="imgface" src="./facebook (1).png" alt="facebook"> </h3>
