@@ -1,4 +1,4 @@
-header{background-color:black ;
+header{background-color: map-get($map:$mapacolores, $key:2 );
     padding: 5px;
     margin:auto;}
     img{ height: 100px;
@@ -7,8 +7,8 @@ header{background-color:black ;
     .h1{ text-align: center;
         font-size: 60px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(255, 166, 0);}
-    .a{color: rgb(216, 149, 25);}
+        color: map-get($map:$mapacolores, $key:1 );}
+    .a{color:  map-get($map:$mapacolores, $key:1 );}
     
     .ul{list-style: none;
         text-align: center;
@@ -20,25 +20,25 @@ header{background-color:black ;
     
     
      
-    .bodystyle{ background-color: #ffa500;}
+    .bodystyle{ background-color: map-get($map:$mapacolores, $key:1 );}
     
-    .divstyle{background-color: #ffa500;}
+    .divstyle{background-color:  map-get($map:$mapacolores, $key:1 );}
     
     
     
-    .button{background-color: black; 
-     color: orange;
+    .button{background-color:map-get($map:$mapacolores, $key:2 );
+     color:  map-get($map:$mapacolores, $key:1 );;
     font-size: 30px;
-    border-color: #ffa500;
+    border-color:  map-get($map:$mapacolores, $key:1 );;
     border-radius: 30%;
     padding: 23px;}
     
-    body{background-color: #ffa500;
+    body{background-color: map-get($map:$mapacolores, $key:1 );
     margin: 0px;}
     h2{text-transform: uppercase;
     padding: 20px;
     font-size: 40px;
-    color: #ffa500;}
+    color:  map-get($map:$mapacolores, $key:1 );}
     
     
     
@@ -46,7 +46,7 @@ header{background-color:black ;
      .h3{display: inline-block;
         width: 30%;
         position: relative;
-        color: rgb(255, 166, 0);
+        color:  map-get($map:$mapacolores, $key:1 );
         text-align: center;
     font-size: 30px;}  
     
@@ -63,12 +63,12 @@ header{background-color:black ;
             }
     
     .footer{ grid-area: footer;
-        background-color:black;
+        background-color:map-get($map:$mapacolores, $key:2 );
        }
     
     .divcontainer{ grid-template-areas: 'header''nav''main''footer';}
     
-    .hijo{background-color: black;
+    .hijo{background-color: map-get($map:$mapacolores, $key:2 );
     border-radius: 20%;
     text-align: center;
     width: 400px;
