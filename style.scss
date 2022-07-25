@@ -1,8 +1,9 @@
-header{background-color: map-get($map:$mapacolores, $key:2 );
+ @import "colores";
+ header{
+    background-color: map-get($map: $mapacolores, $key: 1 );
     padding: 5px;
     margin:auto;}
-    img{ height: 100px;
-    }
+   
     .imgface{height: 30px;}
     .h1{ text-align: center;
         font-size: 60px;
@@ -16,15 +17,70 @@ header{background-color: map-get($map:$mapacolores, $key:2 );
     flex-wrap: nowrap;
     font-size: 25px;
     padding: 10px;
-    justify-content:space-around;}
+    justify-content:space-between;}
+    li{margin: 25px; 
+    border-radius: 20px; }    
     
+    .page__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+        margin-top: 20px;
+        background-color: orange;
     
+    }
+    .button__add{
+        border: none;
+        font-size: 16px;
+        transition-duration: 40ms;
+        text-align: center;
+        border-radius: 8px;
+        background-color: map-get($map: $mapacolores, $key: 2);
+        color: map-get($map: $mapacolores, $key: 1);
+        border: 2px solid ;
+        &:hover{          
+            color: map-get($map: $mapacolores, $key: 1);
+            transition: 0.2s;
+        }
+    }
+    .imgproducto{
+        z-index: 1;
+        object-fit: cover;
+        transition: 0.5s;
+        border-radius: 2%;
+        &:hover{
+            transform: scale(1.15);
+            border-radius: 5%;
+        }
+    }
+    
+    .imgdestacado{
+        width: 100%;
+    }
+    .product__container{
+        margin-left: 15px;
+        padding: 0px 0px;
+        background-color:black;
+        border-radius: 10px;
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgb(58, 56, 56);
+            transition: all 0.7s;
+            border-radius: 3%;
+            zoom: 100.5%;
+        }
+        img{
+            width: 390px;
+            margin-left: 0px;
+            justify-content: center;
+        }
+    }
      
     .bodystyle{ background-color: map-get($map:$mapacolores, $key:1 );}
     
-    .divstyle{background-color:  map-get($map:$mapacolores, $key:1 );}
+   
     
-    
+    .logo{height: 100px;}
     
     .button{background-color:map-get($map:$mapacolores, $key:2 );
      color:  map-get($map:$mapacolores, $key:1 );;
@@ -40,19 +96,26 @@ header{background-color: map-get($map:$mapacolores, $key:2 );
     font-size: 40px;
     color:  map-get($map:$mapacolores, $key:1 );}
     
-    
+    .h3img{ color:white;
+    text-align: center;
+padding: 20px;
+font-size: 30px
+;}
     
     
      .h3{display: inline-block;
         width: 30%;
         position: relative;
-        color:  map-get($map:$mapacolores, $key:1 );
+        color:  map-get($map:$mapacolores, $key: 1 );
         text-align: center;
     font-size: 30px;}  
     
     .header{grid-area: header; }
     
-    .nav{grid-area: nav; }
+    .nav{grid-area: nav; 
+   background-color: black;
+border-radius: 50px;
+margin: 20px;}
     
     .main{grid-area: main;
         display: flex;
@@ -63,7 +126,8 @@ header{background-color: map-get($map:$mapacolores, $key:2 );
             }
     
     .footer{ grid-area: footer;
-        background-color:map-get($map:$mapacolores, $key:2 );
+        background-color:map-get($map:$mapacolores, $key: 2 );
+
        }
     
     .divcontainer{ grid-template-areas: 'header''nav''main''footer';}

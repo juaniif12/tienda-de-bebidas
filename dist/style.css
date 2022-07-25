@@ -60,8 +60,7 @@ li {
 
 .imgproducto {
   z-index: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.5s;
   border-radius: 2%;
 }
@@ -81,7 +80,7 @@ li {
   border-radius: 10px;
 }
 .product__container:hover {
-  box-shadow: 0 8px 16px 0 rgb(58, 56, 56);
+  box-shadow: 0 8px 16px 0 #3a3838;
   transition: all 0.7s;
   border-radius: 3%;
   zoom: 100.5%;
@@ -179,26 +178,32 @@ h2 {
   .header {
     width: 430px;
   }
+
   .ul {
     width: 430px;
   }
+
   button {
     padding: 10px;
     font-size: 20px;
   }
+
   .button {
     width: 100px;
     font-size: 20px;
   }
+
   .footer {
     display: flex;
     width: 430px;
   }
+
   .h3 {
     font-size: 20px;
   }
+
   #insta {
     position: relative;
     top: 37px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
