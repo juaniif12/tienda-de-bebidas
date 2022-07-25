@@ -182,13 +182,15 @@ h2 {
   .ul {
     width: 430px;
   }
-  button {
-    padding: 10px;
-    font-size: 20px;
+  li {
+    margin: 0px;
   }
   .button {
     width: 100px;
     font-size: 20px;
+  }
+  .nav {
+    width: 425px;
   }
   .footer {
     display: flex;
@@ -199,6 +201,6 @@ h2 {
   }
   #insta {
     position: relative;
-    top: 37px;
+    bottom: 1px;
   }
 }/*# sourceMappingURL=style.css.map */
